@@ -22,108 +22,124 @@
 </head>
 <body>
     <!-- start header implementation -->
-    <header class="vw-100">
+    <header>
         <!-- start social-search-bar implementation -->
-        <div class="social-search-bar fs-6 c-white2 main-bg-color h-60 block-content d-flex justify-content-between align-items-center">
-            <div class="social">
-                <div class="m-0">
-                    <li class="fa-brands fa-facebook p-2"><a href="https://www.facebook.com"></a></li>
-                    <li class="fa-brands fa-linkedin p-2"><a href="https://www.linkedin.com"></a></li>
-                    <li class="fa-brands fa-x-twitter p-2"><a href="https://www.twitter.com"></a></li>
-                    <li class="fa-brands fa-square-instagram p-2"><a href="https://www.instagram.com"></a></li>
+        <div class="social-search-bar fs-6 text-white main-bg-color">
+            <div class="container d-flex justify-content-between align-items-center py-1">
+                <div class="social d-flex">
+                    <a href="https://www.facebook.com" class="text-white p-2">
+                        <i class="fa-brands fa-facebook"></i>
+                    </a>
+                    <a href="https://www.linkedin.com" class="text-white p-2">
+                        <i class="fa-brands fa-linkedin"></i>
+                    </a>
+                    <a href="https://www.twitter.com" class="text-white p-2">
+                        <i class="fa-brands fa-x-twitter"></i>
+                    </a>
+                    <a href="https://www.instagram.com" class="text-white p-2">
+                        <i class="fa-brands fa-square-instagram"></i>
+                    </a>
                 </div>
-            </div>
-            <div class="search">
-                <i class="fa-solid fa-magnifying-glass"></i>
+                <div class="search">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </div>
             </div>
         </div>
         <!-- end social-search-bar implementation -->
         <!-- start main menu implementation  -->
-        <nav class="navbar-expand-lg" aria-label="primary-navigation">
-            <div class="block-content">
-                <div class="navbar navbar-expand-lg w-100 d-flex flex-wrap justify-content-between ">
-                    <div>
-                        <a href="#"><img class="w-100p" src="./images/main-logo.png" alt=""></a>
-                    </div>
-                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                            <li class="nav-item">
-                                <a class="nav-link active" aria-current="page" href="index.html">الرئيسية</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" aria-current="page" href="من نحن.html">من نحن</a>
-                            </li>
-                            <li class="nav-item dropdown">
-                                <a class="nav-link dropdown-toggle" href="مجلس الإدارة.html" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light" aria-label="primary-navigation">
+            <div class="container">
+                <!-- Logo -->
+                <a class="navbar-brand" href="#">
+                    <img src="./images/main-logo.png" alt="Logo" class="w-100p">
+                </a>
+                <!-- Toggler Button for Small Screens -->
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <!-- Collapsible Menu -->
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="index.html">الرئيسية</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="من نحن.html">من نحن</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="مجلس الإدارة.html" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                                 مجلس الإدارة
-                                </a>
-                                <ul class="dropdown-menu">
-                                    <li><a class="dropdown-item" href="لائحة مجلس الإدارة.html">لائحة مجلس الإدارة</a></li>
-                                    <li><a class="dropdown-item" href="سلطات مجلس الإدارة.html">سلطات مجلس الإدارة</a></li>
-                                    <li><a class="dropdown-item" href="الأختصاصات.html">الأختصاصات</a></li>
-                                </ul>
-                            </li>
-                            <li class="nav-item dropdown">
-                                <a class="nav-link dropdown-toggle" href="النظام الإساسي.html" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="لائحة مجلس الإدارة.html">لائحة مجلس الإدارة</a></li>
+                                <li><a class="dropdown-item" href="سلطات مجلس الإدارة.html">سلطات مجلس الإدارة</a></li>
+                                <li><a class="dropdown-item" href="الأختصاصات.html">الأختصاصات</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="النظام الإساسي.html" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                                 النظام الإساسي
-                                </a>
-                                <ul class="dropdown-menu">
-                                    <li><a class="dropdown-item" href="العضويات.html">العضويات</a></li>
-                                    <li><a class="dropdown-item" href="أجهزة الجمعية.html">أجهزة الجمعية</a></li>
-                                    <li><a class="dropdown-item" href="النواحي المالية.html">النواحي المالية</a></li>
-                                </ul>
-                            </li>
-                            <li class="nav-item dropdown">
-                                <a class="nav-link dropdown-toggle" href="ميثاق الشرف.html" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="العضويات.html">العضويات</a></li>
+                                <li><a class="dropdown-item" href="أجهزة الجمعية.html">أجهزة الجمعية</a></li>
+                                <li><a class="dropdown-item" href="النواحي المالية.html">النواحي المالية</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="ميثاق الشرف.html" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                                 ميثاق الشرف
-                                </a>
-                                <ul class="dropdown-menu">
-                                    <li><a class="dropdown-item" href="قواعد السلوك في صناعة التقاوي.html">قواعد السلوك في صناعة التقاوي</a></li>
-                                    <li><a class="dropdown-item" href="تطبيق ميثاق شرف الجمعية.html">تطبيق ميثاق شرف الجمعية</a></li>
-                                    <li><a class="dropdown-item" href="قواعد تجارة التقاوي.html">قواعد تجارة التقاوي</a></li>
-                                    <li><a class="dropdown-item" href="قواعد التوفيق لتسوية نزاعات التقاوي.html">قواعد التوفيق لتسوية نزاعات التقاوي</a></li>
-                                    <li><a class="dropdown-item" href="قواعد التحكيم لتسوية نزاعات التقاوي.html">قواعد التحكيم لتسوية نزاعات التقاوي</a></li>
-                                </ul>
-                            </li>
-                            <li class="nav-item dropdown">
-                                <a class="nav-link dropdown-toggle" href="خدمتنا.html" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="قواعد السلوك في صناعة التقاوي.html">قواعد السلوك في صناعة التقاوي</a></li>
+                                <li><a class="dropdown-item" href="تطبيق ميثاق شرف الجمعية.html">تطبيق ميثاق شرف الجمعية</a></li>
+                                <li><a class="dropdown-item" href="قواعد تجارة التقاوي.html">قواعد تجارة التقاوي</a></li>
+                                <li><a class="dropdown-item" href="قواعد التوفيق لتسوية نزاعات التقاوي.html">قواعد التوفيق لتسوية نزاعات التقاوي</a></li>
+                                <li><a class="dropdown-item" href="قواعد التحكيم لتسوية نزاعات التقاوي.html">قواعد التحكيم لتسوية نزاعات التقاوي</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="خدمتنا.html" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                                 خدمتنا
-                                </a>
-                                <ul class="dropdown-menu">
-                                    <li><a class="dropdown-item" href="أنشطة الجمعية.html">أنشطة الجمعية</a></li>
-                                </ul>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" aria-current="page" href="الأخبار.html">الأخبار</a>
-                            </li>
-                        </ul>
-                    </div>
-                    <div>
-                        <a href=""><button type="button" class="btn btn-outline-success rounded-0">أتصل بنا</button></a>
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="أنشطة الجمعية.html">أنشطة الجمعية</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="الأخبار.html">الأخبار</a>
+                        </li>
+                    </ul>
+        
+                    <!-- Contact Button -->
+                    <div class="d-flex">
+                        <a href="#"><button type="button" class="btn btn-outline-success rounded-0">أتصل بنا</button></a>
                     </div>
                 </div>
             </div>
-        </nav>
+        </nav>            
         <!-- end main menu implementation -->
     </header>
     <!-- end header implementation -->
     <!-- start main implementation -->
     <!-- start welcome message section implementation -->
-    <section class="welcome-message vw-100 h-600">
-        <div class="welcome-container w-50 h-100 block-content d-flex flex-wrap flex-column justify-content-center align-items-start gap-3">
-            <h1 class="w-600 c-white1 z-2 fw-bolder">مرحبًا بكم في الجمعية المصرية لصناعة التقاوي</h1>
-            <p class="w-600 c-white2 z-2 lh-base">تأسست الجمعية بهدف دعم القطاع الزراعي المصري وتعزيز الإنتاجية و تلتزم الجمعية في أنظمتها الأساسية وانشتطها وتمويلها باحترام أحكام ومبادئ الدستور والقوانين المصرية والاتفاقيات الدولية التي صدقت عليها مصر.</p>
-            <button type="text" class="btn btn-outline-success z-2">تواصل معنا</button>
+    <section class="welcome-message h-600 d-flex align-items-center">
+        <div class="welcome-container container text-right position-relative z-2">
+            <h1 class="fw-bold text-white mb-3">مرحبًا بكم في الجمعية المصرية لصناعة التقاوي</h1>
+            <p class="text-white-50 mb-4">
+                تأسست الجمعية بهدف دعم القطاع الزراعي المصري وتعزيز الإنتاجية و تلتزم الجمعية في أنظمتها الأساسية وانشتطها وتمويلها باحترام أحكام ومبادئ الدستور والقوانين المصرية والاتفاقيات الدولية التي صدقت عليها مصر.
+            </p>
+            <button type="button" class="btn btn-outline-success">تواصل معنا</button>
         </div>
     </section>
     <!-- end welcome message section implementation -->
     <!-- start snpit about us section -->
-    <section class="snpit-about-us">
-        <div class="container vw-100 h-500 d-flex justify-content-center align-items-center gap-4">
-            <div class="image-box">
-                <img class="h-300 w-700 z-1" src="images/card3.jpg" alt="">
+    <section class="snpit-about-us container mh-100 my-5">
+        <div class="row gap-4">
+            <div class="image-box position-relative col-md-5">
+                <img class="mw-100" src="images/card3.jpg" alt="">
             </div>
-            <div class="text-box ff-cairo">
+            <div class="text-box col-md-5">
                 <h4 class="text-success mt-2">من نحن</h4>
                 <h3 class="fw-semibold mt-2">الجمعية المصرية لصناعة التقاوي</h3>
                 <p class="lh-base mt-2">
@@ -136,19 +152,22 @@
     </section>
     <!-- end snpit about us section -->
     <!-- start esia activities section implementaion-->
-    <section class="esia-activities d-flex flex-wrap flex-column align-items-center justify-content-center gap-4 ff-cairo">
+    <section class="esia-activities d-flex flex-column align-items-center gap-4">
         <h2>أنشطة الجمعية</h2>
-        <div class="cards-activities block-content d-flex justify-content-center align-items-center gap-3">
-            <div class="card-activity">
-                <img src="images/card1.jpg" alt="">
+        <div class="cards-activities row gap-3 justify-content-center">
+            <!-- Card 1 -->
+            <div class="card-activity col-md-6 col-lg-4">
+                <img class="mw-100" src="images/card1.jpg" alt="">
                 <h4 class="c-white1 fs-5 m-0 text-center p-3">إقامة مشروعات اقتصادية وتصنيعية ومستلزمات إنشاج تتعود بالنفع العام.</h4>
             </div>
-            <div class="card-activity">
-                <img src="images/card2.jpg " alt="">
+            <!-- Card 2 -->
+            <div class="card-activity col-md-6 col-lg-4">
+                <img class="mw-100" src="images/card2.jpg " alt="">
                 <h4 class="c-white1 fs-5 m-0 text-center p-3">الندوات والمؤتمرات المحلية والدولية لرفع الحرفية والوعي بالبيئة.</h4>
             </div>
-            <div class="card-activity">
-                <img class="h-350" src="images/card3.jpg" alt="">
+            <!-- Card 3 -->
+            <div class="card-activity col-md-6 col-lg-4">
+                <img class="mw-100" src="images/card3.jpg" alt="">
                 <h4 class="c-white1 fs-5 m-0 text-center p-3">زيادة الإنتاج الزراعي عن طريق زيادة إنتاجية التقاوي باستخدام تقاوي.</h4>
             </div>
         </div>
@@ -156,9 +175,9 @@
     </section>
     <!-- end esia activities section implementation -->
     <!-- start snpit aim section -->
-    <section class="aim">
-        <div class="container vw-100 h-500 d-flex justify-content-center align-items-center gap-4">
-            <div class="text-box ff-cairo">
+    <section class="aim container my-5">
+        <div class="row gap-4">
+            <div class="text-box col-md-5">
                 <h2 class="fw-semibold mt-2">الهدف</h2>
                 <p class="lh-base mt-2 fw-semibold">
                     تقييم الأثر البيئي والاجتماعي والتعامل مع السلطات المصرية ذات الصلة، نيابة عن أعضائها، لتمثيل مصالحهم في الأمور المتعلقة بالبذور، وتعزيز لوائح قطاع البذور الفعالة  
@@ -168,25 +187,60 @@
                     تم تسجيل الجمعية وفقًا لقانون الجمعيات والمؤسسات الأهلية المصري رقم 84/2002، بموجب القانون رقم 2618. عام 2006
                 </p>
             </div>
-            <div class="image-box">
-                <img class="h-300 w-700 z-1" src="images/card3.jpg" alt="">
+            <div class="image-box position-relative col-md-6">
+                <img class="h-300 mw-100 z-1" src="images/card3.jpg" alt="">
             </div>
         </div>
     </section>
     <!-- end snpit aim section -->
     <!-- start newest news section-->
-    <section class="slide-container mb-4 swiper">
-
+    <section class="slide-container my-5 ">
+  <!-- Swiper -->
+  <div class="swiper mySwiper">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide">
+        <img src="images/person1 (2).webp" />
+      </div>
+      <div class="swiper-slide">
+        <img src="images/person2 (2).webp" />
+      </div>
+      <div class="swiper-slide">
+        <img src="https://cdn.magloft.com/github/swiper/images/page-003.jpg" />
+      </div>
+      <div class="swiper-slide">
+        <img src="https://cdn.magloft.com/github/swiper/images/page-004.jpg" />
+      </div>
+      <div class="swiper-slide">
+        <img src="https://cdn.magloft.com/github/swiper/images/page-005.jpg" />
+      </div>
+      <div class="swiper-slide">
+        <img src="https://cdn.magloft.com/github/swiper/images/page-006.jpg" />
+      </div>
+      <div class="swiper-slide">
+        <img src="https://cdn.magloft.com/github/swiper/images/page-007.jpg" />
+      </div>
+      <div class="swiper-slide">
+        <img src="https://cdn.magloft.com/github/swiper/images/page-008.jpg" />
+      </div>
+      <div class="swiper-slide">
+        <img src="https://cdn.magloft.com/github/swiper/images/page-009.jpg" />
+      </div>
+    </div>
+    <div class="swiper-button-next"></div>
+    <div class="swiper-button-prev"></div>
+    <div class="swiper-scrollbar"></div>
+    <div class="swiper-pagination"></div>
+  </div>
     </section>
     <!-- end newest news section-->
     <!-- start footer implementation -->
-    <footer class="footer f-bg mt-4">
-        <div class="boxes-container h-400 c-white1 block-footer d-flex flex-wrap justify-content-center align-items-center gap-5 p-4">
-            <div class="logo-box w-380 text-right">
-                <img src="images/alternative-logo.png" alt="" class="w-100 h-250">
+    <footer class="footer f-bg mt-4 row justify-content-center align-items-center">
+        <div class="boxes-container container row justify-content-center c-white1 p-4">
+            <div class="logo-box text-right col-md-4">
+                <img src="images/alternative-logo.png" alt="" class="mw-100">
                 <p class="lh-base mt-2 c-white2">تأسست الجمعية بهدف دعم القطاع الزراعي المصري وتعزيز الإنتاجية و تلتزم الجمعية في أنظمتها الأساسية وانشتطها وتمويلها باحترام أحكام ومبادئ الدستور والقوانين المصرية والاتفاقيات الدولية التي صدقت عليها مصر.</p>
             </div>
-            <div class="contact-us-box w-380 text-right">
+            <div class="contact-us-box text-right col-md-4">
                 <h3 class="fw-bolder mb-4">تواصل معنا</h3>
                 <div class="fw-bold fs-6 mb-3">الهاتف: <span class="c-white3">20235709529 +</span></div>
                 <div class="fw-bold fs-6 mb-3">الهاتف: <span class="c-white3">20235709528 +</span></div>
@@ -195,11 +249,8 @@
                 <div class="fw-bold fs-6">العنوان: <span class="c-white3 lh-lg">أبراج المناسترلي - برج 5 الدور 14 شقة 4 شارع البحر الأعظم الجيزة</span></div>
             </div>
             <!-- impeded addres on map -->
-            <div class="google-map-box w-380 text-right">
-                <iframe 
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3455.3586262005265!2d31.215931723916952!3d29.997857220775547!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1458470c3181c14d%3A0x9f392bcd30ba563d!2z2KfZhNis2YXYudmK2Kkg2KfZhNmF2LXYsdmK2Kkg2YTYtdmG2KfYudipINin2YTYqtmC2KfZiNmK!5e0!3m2!1sar!2seg!4v1730809946078!5m2!1sar!2seg"
-                    width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
-                </iframe>
+            <div class="google-map-box text-right col-md-4">
+                <iframe class="w-100 h-100" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3455.3586262005183!2d31.215931723916956!3d29.997857220775547!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1458470c3181c14d%3A0x9f392bcd30ba563d!2z2KfZhNis2YXYudmK2Kkg2KfZhNmF2LXYsdmK2Kkg2YTYtdmG2KfYudipINin2YTYqtmC2KfZiNmK!5e0!3m2!1sar!2seg!4v1730889036422!5m2!1sar!2seg" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
             </div>
         </div>
         <p class="copyright c-white1">
