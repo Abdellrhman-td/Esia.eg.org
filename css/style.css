@@ -87,7 +87,7 @@ body {
 /* start welcome message section */
 .welcome-message {
     position: relative;
-    background-image: url(/images/background-home.webp);
+    background-image: url(../images/background-home.webp);
     background-position: center;
     background-attachment: scroll;
     background-size: cover;
@@ -171,7 +171,7 @@ footer .copyright  {
 /* start من نحن page */
 /* start background-section */
 .background-container {
-    background-image: url(/images/secondary-background.jpg);
+    background-image: url(../images/secondary-background.jpg);
     width: 100%;
     background-size: cover;
     background-attachment: fixed;
