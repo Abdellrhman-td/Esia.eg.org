@@ -30,6 +30,10 @@ body {
     font-size: 16px;
     margin-left: 20px;
 }
+
+.navbar-nav .nav-item{
+    padding: 20px 0 !important;
+}
 .navbar-nav .dropdown-menu {
     font-size: 13px;
     text-align: start;
@@ -80,8 +84,17 @@ body {
 }
 .navbar-nav .nav-item:hover .dropdown-menu{
     display: block;
-    margin-top: 20px;
+    margin-top: 10px;
     color: white;
+}
+.navbar-nav .nav-item .spcial1:hover .spcial2{
+    display: block;
+    margin-top: 10px;
+    color: white;
+}
+.collapse .nav-link {
+    font-size: 16px;
+    font-weight: 700;
 }
 /* end main menu */
 
@@ -128,6 +141,14 @@ body {
 .esia-activities {
     padding: 20px;
     background-image: linear-gradient(180deg, #E1FDE1 0%, #34F229 100%);
+}
+.bg-white-special {
+    padding: 20px;
+    background-image: none;
+}
+.bg-box {
+    background-color: #156505 !important;
+    border-color: #156505 !important;
 }
 .esia-activities .card-activity {
     width: 400px;
@@ -249,7 +270,6 @@ footer .copyright  {
 }
 .timeline .line-info {
     width: 2px;
-    height: 2000px;
     background: gray;
     position: relative;
     left: -50%;
@@ -353,6 +373,34 @@ footer .copyright  {
     color: #626262;
 }
 
+.timeline .container .box8 {
+    border: 2px solid rgb(75, 227, 58);
+    box-shadow: 0 0 5px 10px rgba(255, 255, 255, 0.92);
+    top: 2100px;
+    right: unset;
+}
+.timeline .container .box8 h3 {
+    color: #6ed00d;
+    font-weight: 600;
+}
+.timeline .container .box8 p {
+    color: #626262;
+}
+
+.timeline .container .box9 {
+    border: 2px solid rgb(75, 227, 58);
+    box-shadow: 0 0 5px 10px rgba(255, 255, 255, 0.92);
+    top: 2400px;
+    right: 0;
+}
+.timeline .container .box9 h3 {
+    color: #6ed00d;
+    font-weight: 600;
+}
+.timeline .container .box9 p {
+    color: #626262;
+}
+
 .timeline .container {
     position: relative;
 }
@@ -360,7 +408,7 @@ footer .copyright  {
     position: absolute;
     right: -51px;
     transform: translateX(-50%);
-    top: 3%;
+    top: 125px;
     font-size: 28px;
     background: #6cdc1d;
     color: white;
@@ -376,7 +424,7 @@ footer .copyright  {
     position: absolute;
     right: -51px;
     transform: translateX(-50%);
-    top: 16%;
+    top: 328px;
     font-size: 28px;
     background: #6cdc1d;
     color: white;
@@ -388,7 +436,7 @@ footer .copyright  {
     position: absolute;
     right: -51px;
     transform: translateX(-50%);
-    top: 30%;
+    top: 635px;
     font-size: 29px;
     background: #6cdc1d;
     color: white;
@@ -400,7 +448,7 @@ footer .copyright  {
     position: absolute;
     right: -51px;
     transform: translateX(-50%);
-    top: 47%;
+    top: 1237px;
     font-size: 28px;
     background: #6cdc1d;
     color: white;
@@ -412,7 +460,7 @@ footer .copyright  {
     position: absolute;
     right: -51px;
     transform: translateX(-50%);
-    top: 62%;
+    top: 1558px;
     font-size: 28px;
     background: #6cdc1d;
     color: white;
@@ -424,7 +472,7 @@ footer .copyright  {
     position: absolute;
     right: -51px;
     transform: translateX(-50%);
-    top: 77%;
+    top: 71%;
     font-size: 28px;
     background: #6cdc1d;
     color: white;
@@ -436,7 +484,7 @@ footer .copyright  {
     position: absolute;
     right: -51px;
     transform: translateX(-50%);
-    top: 31%;
+    top: 955px;
     font-size: 28px;
     background: #6cdc1d;
     color: white;
@@ -448,6 +496,18 @@ footer .copyright  {
     position: absolute;
     right: -51px;
     transform: translateX(-50%);
+    top: 2139px;
+    font-size: 28px;
+    background: #6cdc1d;
+    color: white;
+    padding: 10px;
+    border-radius: 56%;
+    border: 2px solid gray;
+}
+.timeline .container .line-info .time9{
+    position: absolute;
+    right: -51px;
+    transform: translateX(-50%);
     top: 92%;
     font-size: 28px;
     background: #6cdc1d;
@@ -456,6 +516,7 @@ footer .copyright  {
     border-radius: 56%;
     border: 2px solid gray;
 }
+
 /* end مجلس الإدراه*/
 
 /* start الأختصاصات page */
@@ -566,3 +627,34 @@ footer .copyright  {
     font-size: 60px;
 }
 /* end العضويات page */
+
+/* start أجهزه الجمعية page */
+.invitation .img-box img:nth-child(1){
+    top: 240px;
+    left: 11px;
+}
+.invitation .img-box img:nth-child(2){
+    left: 50%;
+    transform: translateX(-50%);
+    top: 112px;
+    width: 210px;
+    transition: animation 0.5s ease-in;
+    -webkit-transition: animation 0.5s ease-in;
+    -moz-transition: animation 0.5s ease-in;
+    -ms-transition: animation 0.5s ease-in;
+    -o-transition: animation 0.5s ease-in;
+    box-shadow: 0px 15px 50px 0px #D3DCE8;
+}
+.invitation .img-box img:nth-child(2):hover {
+    animation: top-bottom 2s infinite;
+    left: 23.5%;
+}
+@keyframes top-bottom {
+    0%,100% {
+        transform: translateY(-8px);
+}
+    50% {
+        transform: translateY(-4px);
+}
+}
+/* end أجهزه الجمعية page */

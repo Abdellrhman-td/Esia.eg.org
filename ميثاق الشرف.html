@@ -20,88 +20,103 @@
 </head>
 <body>
     <!-- start header implementation -->
-    <header class="vw-100" style="height: 150px;">
+    <header>
         <!-- start social-search-bar implementation -->
-        <div class="social-search-bar fs-6 c-white2  main-bg-color h-25 block-content d-flex flex-wrap justify-content-between align-items-center">
-            <div class="social">
-                <ul class="p-0 m-0">
-                    <li class="fa-brands fa-facebook p-2"><a href="https://www.facebook.com"></a></li>
-                    <li class="fa-brands fa-linkedin p-2"><a href="https://www.linkedin.com"></a></li>
-                    <li class="fa-brands fa-x-twitter p-2"><a href="https://www.twitter.com"></a></li>
-                    <li class="fa-brands fa-square-instagram p-2"><a href="https://www.instagram.com"></a></li>
-                </ul>
-            </div>
-            <div class="search">
-                <i class="fa-solid fa-magnifying-glass"></i>
+        <div class="social-search-bar fs-6 text-white main-bg-color">
+            <div class="container d-flex justify-content-between align-items-center py-1">
+                <div class="social d-flex">
+                    <a href="https://www.facebook.com" class="text-white p-2">
+                        <i class="fa-brands fa-facebook"></i>
+                    </a>
+                    <a href="https://www.linkedin.com" class="text-white p-2">
+                        <i class="fa-brands fa-linkedin"></i>
+                    </a>
+                    <a href="https://www.twitter.com" class="text-white p-2">
+                        <i class="fa-brands fa-x-twitter"></i>
+                    </a>
+                    <a href="https://www.instagram.com" class="text-white p-2">
+                        <i class="fa-brands fa-square-instagram"></i>
+                    </a>
+                </div>
+                <div class="search">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </div>
             </div>
         </div>
         <!-- end social-search-bar implementation -->
         <!-- start main menu implementation  -->
-        <nav class="navbar-expand-lg" aria-label="primary-navigation">
-            <div class="block-content">
-                <div class="navbar navbar-expand-lg w-100 d-flex flex-wrap justify-content-between ">
-                    <div>
-                        <a href="#"><img class="w-100p" src="./images/main-logo.png" alt=""></a>
-                    </div>
-                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                            <li class="nav-item">
-                                <a class="nav-link active" aria-current="page" href="index.html">الرئيسية</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" aria-current="page" href="من نحن.html">من نحن</a>
-                            </li>
-                            <li class="nav-item dropdown">
-                                <a class="nav-link dropdown-toggle" href="مجلس الإدارة.html" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light" aria-label="primary-navigation">
+            <div class="container">
+                <!-- Logo -->
+                <a class="navbar-brand" href="#">
+                    <img src="./images/main-logo.png" alt="Logo" class="w-100p">
+                </a>
+                <!-- Toggler Button for Small Screens -->
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <!-- Collapsible Menu -->
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link highlight" aria-current="page" href="index.html">الرئيسية</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="من نحن.html">من نحن</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="مجلس الإدارة.html" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                                 مجلس الإدارة
-                                </a>
-                                <ul class="dropdown-menu">
-                                    <li><a class="dropdown-item" href="لائحة مجلس الإدارة.html">لائحة مجلس الإدارة</a></li>
-                                    <li><a class="dropdown-item" href="سلطات مجلس الإدارة.html">سلطات مجلس الإدارة</a></li>
-                                    <li><a class="dropdown-item" href="الأختصاصات.html">الأختصاصات</a></li>
-                                </ul>
-                            </li>
-                            <li class="nav-item dropdown">
-                                <a class="nav-link dropdown-toggle" href="النظام الإساسي.html" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="لائحة مجلس الإدارة.html">لائحة مجلس الإدارة</a></li>
+                                <li><a class="dropdown-item" href="سلطات مجلس الإدارة.html">سلطات مجلس الإدارة</a></li>
+                                <li><a class="dropdown-item" href="الأختصاصات.html">الأختصاصات</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="النظام الإساسي.html" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                                 النظام الإساسي
-                                </a>
-                                <ul class="dropdown-menu">
-                                    <li><a class="dropdown-item" href="العضويات.html">العضويات</a></li>
-                                    <li><a class="dropdown-item" href="أجهزة الجمعية.html">أجهزة الجمعية</a></li>
-                                    <li><a class="dropdown-item" href="النواحي المالية.html">النواحي المالية</a></li>
-                                </ul>
-                            </li>
-                            <li class="nav-item dropdown">
-                                <a class="nav-link dropdown-toggle" href="ميثاق الشرف.html" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="العضويات.html">العضويات</a></li>
+                                <li><a class="dropdown-item" href="أجهزة الجمعية.html">أجهزة الجمعية</a></li>
+                                <li><a class="dropdown-item" href="النواحي المالية.html">النواحي المالية</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="ميثاق الشرف.html" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                                 ميثاق الشرف
-                                </a>
-                                <ul class="dropdown-menu">
-                                    <li><a class="dropdown-item" href="قواعد السلوك في صناعة التقاوي.html">قواعد السلوك في صناعة التقاوي</a></li>
-                                    <li><a class="dropdown-item" href="تطبيق ميثاق شرف الجمعية.html">تطبيق ميثاق شرف الجمعية</a></li>
-                                    <li><a class="dropdown-item" href="قواعد تجارة التقاوي.html">قواعد تجارة التقاوي</a></li>
-                                    <li><a class="dropdown-item" href="قواعد التوفيق لتسوية نزاعات التقاوي.html">قواعد التوفيق لتسوية نزاعات التقاوي</a></li>
-                                    <li><a class="dropdown-item" href="قواعد التحكيم لتسوية نزاعات التقاوي.html">قواعد التحكيم لتسوية نزاعات التقاوي</a></li>
-                                </ul>
-                            </li>
-                            <li class="nav-item dropdown">
-                                <a class="nav-link dropdown-toggle" href="خدمتنا.html" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="قواعد السلوك في صناعة التقاوي.html">قواعد السلوك في صناعة التقاوي</a></li>
+                                <li><a class="dropdown-item" href="تطبيق ميثاق شرف الجمعية.html">تطبيق ميثاق شرف الجمعية</a></li>
+                                <li><a class="dropdown-item" href="قواعد تجارة التقاوي.html">قواعد تجارة التقاوي</a></li>
+                                <li><a class="dropdown-item" href="قواعد التوفيق لتسوية نزاعات التقاوي.html">قواعد التوفيق لتسوية نزاعات التقاوي</a></li>
+                                <li><a class="dropdown-item" href="قواعد التحكيم لتسوية نزاعات التقاوي.html">قواعد التحكيم لتسوية نزاعات التقاوي</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="خدمتنا.html" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                                 خدمتنا
-                                </a>
-                                <ul class="dropdown-menu">
-                                    <li><a class="dropdown-item" href="أنشطة الجمعية.html">أنشطة الجمعية</a></li>
-                                </ul>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" aria-current="page" href="الأخبار.html">الأخبار</a>
-                            </li>
-                        </ul>
-                    </div>
-                    <div>
-                        <a href=""><button type="button" class="btn btn-outline-success rounded-0">أتصل بنا</button></a>
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="أنشطة الجمعية.html">أنشطة الجمعية</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="الأخبار.html">الأخبار</a>
+                        </li>
+                    </ul>
+        
+                    <!-- Contact Button -->
+                    <div class="d-flex">
+                        <a href="#"><button type="button" class="btn btn-outline-success rounded-0">أتصل بنا</button></a>
                     </div>
                 </div>
             </div>
-        </nav>
+        </nav>            
         <!-- end main menu implementation -->
     </header>
+    <!-- end header implementation -->
 </body>

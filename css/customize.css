@@ -2,6 +2,12 @@
 .main-bg-color {
     background-color: rgba(66, 133, 4, 0.92);
 }
+.bg-white {
+    background-color: white !important;
+}
+.box-bg-color {
+    background-color: #B1EBA6;
+}
 /* start colors */
 .c-white1 {
     color: white;
@@ -32,6 +38,9 @@
 }
 .f-bg {
     background-color: #192c27;
+}
+.secondary-bg-color {
+    background-color: rgb(53, 160, 28);
 }
 /* end colors */
 
@@ -148,6 +157,12 @@
 .h-2000 {
     height: 2000px;
 }
+.h-2630 {
+    height: 2630px;
+}
+.h-1680{
+    height: 1680px;
+}
 /* end width height */
 /* start fonts */
 .ff-cairo {
@@ -166,6 +181,14 @@
 .l-0 {
     left: 0;
 }
+/* start top timeline */
+.t-927 {
+    top:927px !important;
+}
+.t-97 {
+    top:97px;
+}
+/* end top timeline */
 /* end spaces */
 /* end fonts */
 /* start components */
@@ -199,5 +222,13 @@
     align-items: center;
     font-size: 25px;
 }
+.collapse .navbar-nav .highlight {
+    color: red !important;
+}
 /* end components */
+/* start spaces */
+.p-y-100 {
+    padding: 100px 0 100px 0;
+}
+/* end spaces */
 

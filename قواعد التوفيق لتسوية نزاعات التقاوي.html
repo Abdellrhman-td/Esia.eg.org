@@ -1,3 +1,5 @@
+<!DOCTYPE html>
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -16,92 +18,484 @@
     crossorigin="anonymous" referrerpolicy="no-referrer" />
     <!-- import swipperjs cdn for css file -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
-    <title>قواعد التوفيق لتسوية نزاعات التقاوي/title>
+    <title>قواعد التوفيق لتسوية نزاعات التقاوي</title>
 </head>
 <body>
     <!-- start header implementation -->
-    <header class="vw-100" style="height: 150px;">
+    <header>
         <!-- start social-search-bar implementation -->
-        <div class="social-search-bar fs-6 c-white2  main-bg-color h-25 block-content d-flex flex-wrap justify-content-between align-items-center">
-            <div class="social">
-                <ul class="p-0 m-0">
-                    <li class="fa-brands fa-facebook p-2"><a href="https://www.facebook.com"></a></li>
-                    <li class="fa-brands fa-linkedin p-2"><a href="https://www.linkedin.com"></a></li>
-                    <li class="fa-brands fa-x-twitter p-2"><a href="https://www.twitter.com"></a></li>
-                    <li class="fa-brands fa-square-instagram p-2"><a href="https://www.instagram.com"></a></li>
-                </ul>
-            </div>
-            <div class="search">
-                <i class="fa-solid fa-magnifying-glass"></i>
+        <div class="social-search-bar fs-6 text-white main-bg-color">
+            <div class="container d-flex justify-content-between align-items-center py-1">
+                <div class="social d-flex">
+                    <a href="https://www.facebook.com" class="text-white p-2">
+                        <i class="fa-brands fa-facebook"></i>
+                    </a>
+                    <a href="https://www.linkedin.com" class="text-white p-2">
+                        <i class="fa-brands fa-linkedin"></i>
+                    </a>
+                    <a href="https://www.twitter.com" class="text-white p-2">
+                        <i class="fa-brands fa-x-twitter"></i>
+                    </a>
+                    <a href="https://www.instagram.com" class="text-white p-2">
+                        <i class="fa-brands fa-square-instagram"></i>
+                    </a>
+                </div>
+                <div class="search">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </div>
             </div>
         </div>
         <!-- end social-search-bar implementation -->
         <!-- start main menu implementation  -->
-        <nav class="navbar-expand-lg" aria-label="primary-navigation">
-            <div class="block-content">
-                <div class="navbar navbar-expand-lg w-100 d-flex flex-wrap justify-content-between ">
-                    <div>
-                        <a href="#"><img class="w-100p" src="./images/main-logo.png" alt=""></a>
-                    </div>
-                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                            <li class="nav-item">
-                                <a class="nav-link active" aria-current="page" href="index.html">الرئيسية</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" aria-current="page" href="من نحن.html">من نحن</a>
-                            </li>
-                            <li class="nav-item dropdown">
-                                <a class="nav-link dropdown-toggle" href="مجلس الإدارة.html" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light" aria-label="primary-navigation">
+            <div class="container">
+                <!-- Logo -->
+                <a class="navbar-brand" href="#">
+                    <img src="./images/main-logo.png" alt="Logo" class="w-100p">
+                </a>
+                <!-- Toggler Button for Small Screens -->
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <!-- Collapsible Menu -->
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link highlight" aria-current="page" href="index.html">الرئيسية</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="من نحن.html">من نحن</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="مجلس الإدارة.html" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                                 مجلس الإدارة
-                                </a>
-                                <ul class="dropdown-menu">
-                                    <li><a class="dropdown-item" href="لائحة مجلس الإدارة.html">لائحة مجلس الإدارة</a></li>
-                                    <li><a class="dropdown-item" href="سلطات مجلس الإدارة.html">سلطات مجلس الإدارة</a></li>
-                                    <li><a class="dropdown-item" href="الأختصاصات.html">الأختصاصات</a></li>
-                                </ul>
-                            </li>
-                            <li class="nav-item dropdown">
-                                <a class="nav-link dropdown-toggle" href="النظام الإساسي.html" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="لائحة مجلس الإدارة.html">لائحة مجلس الإدارة</a></li>
+                                <li><a class="dropdown-item" href="سلطات مجلس الإدارة.html">سلطات مجلس الإدارة</a></li>
+                                <li><a class="dropdown-item" href="الأختصاصات.html">الأختصاصات</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="النظام الإساسي.html" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                                 النظام الإساسي
-                                </a>
-                                <ul class="dropdown-menu">
-                                    <li><a class="dropdown-item" href="العضويات.html">العضويات</a></li>
-                                    <li><a class="dropdown-item" href="أجهزة الجمعية.html">أجهزة الجمعية</a></li>
-                                    <li><a class="dropdown-item" href="النواحي المالية.html">النواحي المالية</a></li>
-                                </ul>
-                            </li>
-                            <li class="nav-item dropdown">
-                                <a class="nav-link dropdown-toggle" href="ميثاق الشرف.html" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="العضويات.html">العضويات</a></li>
+                                <li><a class="dropdown-item" href="أجهزة الجمعية.html">أجهزة الجمعية</a></li>
+                                <li><a class="dropdown-item" href="النواحي المالية.html">النواحي المالية</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="ميثاق الشرف.html" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                                 ميثاق الشرف
-                                </a>
-                                <ul class="dropdown-menu">
-                                    <li><a class="dropdown-item" href="قواعد السلوك في صناعة التقاوي.html">قواعد السلوك في صناعة التقاوي</a></li>
-                                    <li><a class="dropdown-item" href="تطبيق ميثاق شرف الجمعية.html">تطبيق ميثاق شرف الجمعية</a></li>
-                                    <li><a class="dropdown-item" href="قواعد تجارة التقاوي.html">قواعد تجارة التقاوي</a></li>
-                                    <li><a class="dropdown-item" href="قواعد التوفيق لتسوية نزاعات التقاوي.html">قواعد التوفيق لتسوية نزاعات التقاوي</a></li>
-                                    <li><a class="dropdown-item" href="قواعد التحكيم لتسوية نزاعات التقاوي.html">قواعد التحكيم لتسوية نزاعات التقاوي</a></li>
-                                </ul>
-                            </li>
-                            <li class="nav-item dropdown">
-                                <a class="nav-link dropdown-toggle" href="خدمتنا.html" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="قواعد السلوك في صناعة التقاوي.html">قواعد السلوك في صناعة التقاوي</a></li>
+                                <li><a class="dropdown-item" href="تطبيق ميثاق شرف الجمعية.html">تطبيق ميثاق شرف الجمعية</a></li>
+                                <li><a class="dropdown-item" href="قواعد تجارة التقاوي.html">قواعد تجارة التقاوي</a></li>
+                                <li><a class="dropdown-item" href="قواعد التوفيق لتسوية نزاعات التقاوي.html">قواعد التوفيق لتسوية نزاعات التقاوي</a></li>
+                                <li><a class="dropdown-item" href="قواعد التحكيم لتسوية نزاعات التقاوي.html">قواعد التحكيم لتسوية نزاعات التقاوي</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="خدمتنا.html" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                                 خدمتنا
-                                </a>
-                                <ul class="dropdown-menu">
-                                    <li><a class="dropdown-item" href="أنشطة الجمعية.html">أنشطة الجمعية</a></li>
-                                </ul>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" aria-current="page" href="الأخبار.html">الأخبار</a>
-                            </li>
-                        </ul>
-                    </div>
-                    <div>
-                        <a href=""><button type="button" class="btn btn-outline-success rounded-0">أتصل بنا</button></a>
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="أنشطة الجمعية.html">أنشطة الجمعية</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="الأخبار.html">الأخبار</a>
+                        </li>
+                    </ul>
+        
+                    <!-- Contact Button -->
+                    <div class="d-flex">
+                        <a href="#"><button type="button" class="btn btn-outline-success rounded-0">أتصل بنا</button></a>
                     </div>
                 </div>
             </div>
-        </nav>
+        </nav>            
         <!-- end main menu implementation -->
     </header>
+    <!-- end header implementation -->
+    <!-- start treasurer section implementaion-->
+    <section class="treasurer container my-5">
+        <div class="tow-container-list row mt-5">
+            <div class="right-list col-md-6">
+                <h2 class="pb-3 fw-bolder">القاعدة الاولي :مجال تطبيق هذه القواعد:</h2>
+                <div class="box d-flex position-relative">
+                    <div class="border-line"></div>
+                    <div class="bridge"></div>
+                    <div class="number flex-shrink-0 flex-grow-0">01</div>
+                    <div class="text me-3">
+                        هذه القواعد تحكم التعاملات فى التقاوى بين أعضاء الجمعية، ما لم يتفق الاطراف كتابة على غير ذلك</div>
+                </div>
+                <div class="box d-flex position-relative">
+                    <div class="border-line"></div>
+                    <div class="bridge"></div>
+                    <div class="number flex-shrink-0">02</div>
+                    <div class="text me-3">
+                        هذه القواعد تحكم التعاملات فى التقاوى بين أعضاء الجمعية وغير الاعضاء من منتجى ومعدى وتجار التقاوى ( لو وافق الطرفان على ذلك كتابةً )
+                    </div>
+                </div>
+                <div class="box d-flex position-relative">
+                    <div class="border-line"></div>
+                    <div class="bridge"></div>
+                    <div class="number flex-shrink-0">03</div>
+                    <div class="text me-3">
+                        هذه القواعد تحكم التعاملات فى التقاوى بين أعضاء الجمعية والزراع الذين يشترون التقاوى لغرض زراعتها فقط، ما لم تحدد فاتورة البيع أو التعاقد غير ذلك .
+                    </div>
+                </div>
+                <div class="box d-flex position-relative">
+                    <div class="border-line"></div>
+                    <div class="bridge"></div>
+                    <div class="number flex-shrink-0">04</div>
+                    <div class="text me-3">
+                        إذا تضمن عقد ما شروطاً تمثل إستثناءاً من تلك القواعد، فإن هذه الشروط تحل محل الاجزاء المقابلة لها فى تلك القواعد
+                    </div>
+                </div>
+            </div>
+            <div class="right-list col-md-6">
+                <h2 class="pb-3 fw-bolder">االقاعدة الثانية : إتمام شروط العقد :</h2>
+                <div class="box d-flex position-relative">
+                    <div class="border-line"></div>
+                    <div class="bridge"></div>
+                    <div class="number flex-shrink-0 flex-grow-0">01</div>
+                    <div class="text me-3">
+                        تعتبر العروض التى تصل بوسائل الاتصال دليلاً لإثبات وموضوعاً للرد باستخدام وسائل الإتصال خالل 24 ساعة من ساعة وصولها .</div>
+                </div>
+                <div class="box d-flex position-relative">
+                    <div class="border-line"></div>
+                    <div class="bridge"></div>
+                    <div class="number flex-shrink-0">02</div>
+                    <div class="text me-3">
+                        إذا تم التوقيع يقوم كل من المشترى والبائع – خلال ثلاثة أيام ما لم يكن للتأخير ما يبرره – بإرسال ما يفيد تأكيد العقد كتابياً ، وإذا لم يرسل أى منهما هذا التأكيد الكتابى يظل العقد سارياً على أساس الاتفاق الشفوى أو الاتصالات أو المكاتبات .
+                    </div>
+                </div>
+                <div class="box d-flex position-relative">
+                    <div class="border-line"></div>
+                    <div class="bridge"></div>
+                    <div class="number flex-shrink-0">03</div>
+                    <div class="text me-3">يتضمن العرض ) العقد ( وصفاً لشروط العقد ومنها : - أ . تاريخ التعامل . ب. الكمية . جـ. النوع ) المحصول ( والصنف . د. وصف النوعية أو الجودة ) القاعدة الرابعة ( . هـ. سعر الوحدة وأساس الشحن. و. وصف العبوة ) القاعدة الثالثة ( . ز . أية شروط أو أحكام غير متضمنة فى هذه القواعد أو منافية لها . ح . موعد الشحن . ط . شروط الدفع . ي . أية شروط أو أحكام غير متضمنة فى هذه القواعد أو منافية لها .</div>
+                </div>
+                <div class="box d-flex position-relative">
+                    <div class="border-line"></div>
+                    <div class="bridge"></div>
+                    <div class="number flex-shrink-0">04</div>
+                    <div class="text me-3">
+                        الاشتراك مع الأمين العام (السكرتير) فى وضع مشروع موازنة السنة المقبلة وعرضه على مجلس الإدارة قبل عرضه على الجمعية العمومية بخمسة عشر يوما على الأقل.</div>
+                </div>
+            </div>
+
+            <div class="right-list col-md-6">
+                <h2 class="pb-3 fw-bolder mt-5">القاعدة الثالثة : الكمية والتعبئة :</h2>
+                <div class="box d-flex position-relative">
+                    <div class="border-line"></div>
+                    <div class="bridge"></div>
+                    <div class="number flex-shrink-0 flex-grow-0">01</div>
+                    <div class="text me-3">يحدد العقد صراحة الكمية المتعامل فيها وكذا المحتويات بالوزن أو العدد حسبما هو متبع لكل وحدات العبوات المكونة للوط الواحد ، كما يحدد أيضاً نوع العبوات مثل أكياس الجوت أو الورق أو البالستيك أو الصناديق والعلب .
+                    </div>
+                </div>
+                <div class="box d-flex position-relative">
+                    <div class="border-line"></div>
+                    <div class="bridge"></div>
+                    <div class="number flex-shrink-0">02</div>
+                    <div class="text me-3">
+                        يحدد العقد ما إذا كانت تكاليف التعبئة متضمنة أو خارج السعر المتفق عليه فى العقد، وإذا كانت خارج السعر وجب االشارة إليها فى العقد
+                    </div>
+                </div>
+                <div class="box d-flex position-relative">
+                    <div class="border-line"></div>
+                    <div class="bridge"></div>
+                    <div class="number flex-shrink-0">03</div>
+                    <div class="text me-3">
+                        فى حالة البيع بالوزن يجب أن يوضح ما إذا كان الوزن القائم أو الوزن الصافى هو المعمول به .
+                    </div>
+                </div>
+                <div class="box d-flex position-relative">
+                    <div class="border-line"></div>
+                    <div class="bridge"></div>
+                    <div class="number flex-shrink-0">04</div>
+                    <div class="text me-3">
+                        يسمح استخدام كلمة )) حوالى (( أو )) تقريباً (( للبائع بتسليم الكمية بزيادة أو نقص %5 عن الكمية المنصوص عليها فى العقد .
+                    </div>
+                </div>
+            </div>
+            <div class="right-list col-md-6">
+                <h2 class="pb-3 fw-bolder mt-5">القاعدة الثالثة : الكمية والتعبئة :</h2>
+                <div class="box d-flex position-relative">
+                    <div class="border-line"></div>
+                    <div class="bridge"></div>
+                    <div class="number flex-shrink-0 flex-grow-0">05</div>
+                    <div class="text me-3">إذا كانت الكمية المتعاقد عليها تقع بين رقمين، يتم التسليم فى إطار الحدود الموضحة، وفى حالة عدم التسليم فإن المتوسط بين الرقمين يستخدم كأساس للتسوية.
+                    </div>
+                </div>
+                <div class="box d-flex position-relative">
+                    <div class="border-line"></div>
+                    <div class="bridge"></div>
+                    <div class="number flex-shrink-0">06</div>
+                    <div class="text me-3">
+                        لن تتجاوز كمية اللوط المقدار الذى تحدده الضوابط الرسمية المعمول بها.
+                    </div>
+                </div>
+            </div>
+
+            <div class="right-list col-md-6 mt-5">
+                <h2 class="pb-3 fw-bolder">لقاعدة الرابعة : جودة التقــــــــاوي :</h2>
+                <div class="box d-flex position-relative">
+                    <div class="border-line"></div>
+                    <div class="bridge"></div>
+                    <div class="number flex-shrink-0 flex-grow-0">01</div>
+                    <div class="text me-3">تتم تعبئة التقاوي لاغراض البيع ووضع البطاقات الخاصة بالمعلومات عليها وفقاً للقوانين واللوائح السارية. وفى الحالات التى تنطبق عليها لوائح معينة للتقاوى فإن بطاقات المعلومات يجب أن تشتمل على كل المعلومات الضرورية المتعلقة بجودة التقاوى وفترة صلاحيتها والمعامالت الكيميائية والاضافات والمعملات البيولوجية .
+                    </div>
+                </div>
+                <div class="box d-flex position-relative">
+                    <div class="border-line"></div>
+                    <div class="bridge"></div>
+                    <div class="number flex-shrink-0">02</div>
+                    <div class="text me-3">
+                        بالنسبة للمعاملات التى تمثل خطراً على الصحة البد أن تتضمن بطاقة المعلومات تحذيراً واضحاً من استخدام هذه التقاوى كغذاء لإلنسان أو علف للحيوان .
+                </div>
+                </div>
+                <div class="box d-flex position-relative">
+                    <div class="border-line"></div>
+                    <div class="bridge"></div>
+                    <div class="number flex-shrink-0">03</div>
+                    <div class="text me-3">
+                        جميع البيانات الخاصة بالمطابقة للنوع والتى تستخدم مصطلح " تقاوى معتمدة " يجب أن تتبع قرارات الادارة المركزية لفحص وإعتماد التقاوى أو أية جهة مماثلة فى دولة أجنبية أو أية جهة خاصة معترف بها من قبل الجمعية
+                </div>
+                </div>
+                <div class="box d-flex position-relative">
+                    <div class="border-line"></div>
+                    <div class="bridge"></div>
+                    <div class="number flex-shrink-0">04</div>
+                    <div class="text me-3">
+                        بالنسبة للتقاوى التى تباع بالتجزئة يوفر البائع للمشترى فاتورة بيع تتضمن تاريخ وكمية وسعر واسم الصنف وغير ذلك من البيانات الالزمة لتحديد الشركة المسئولة عن وضع البطاقات على عبوات التقاوى وكل المعلومات الالزمة عن جودة التقاوى المطلوبة قانوناً .
+                </div>
+                </div>
+                <div class="box d-flex position-relative">
+                    <div class="border-line"></div>
+                    <div class="bridge"></div>
+                    <div class="number flex-shrink-0">05</div>
+                    <div class="text me-3">
+                        
+                        فيما يلى بيان لمصطلحات نسب السماح : أ . فى حالة استخدام مصطلحات مثل " الحد الأدنى " أو الحد الأقصى " أو " أقل من " أو " لا تتجاوز ".. فإن هذا معناه عدم وجود نسبة سماح . ب . نسب السماح المنصوص عليها والمعمول بها عند توقيع العقد تطبق على أساس أختبارات تجرى على الكميات المسحوبة من لوطات التقاوى بعد تسليمها .
+                    </div>
+                </div>
+            </div>
+            <div class="right-list col-md-6 mt-5">
+                <h2 class="pb-3 fw-bolder">القاعدة الخامسه : مخالفات الجلـــــــودة :</h2>
+                <div class="box d-flex position-relative">
+                    <div class="border-line"></div>
+                    <div class="bridge"></div>
+                    <div class="number flex-shrink-0 flex-grow-0">01</div>
+                    <div class="text me-3">الشكاوى الخاصة بالمطابقة للنوع ( النقاوة الوراثية ) يتم تقديمها فيما لا يتجاوز 180 يوماً عن تاريخ التسليم، أما المشترين الذين لا يستخدمون التقاوى للزراعة فيسمح لهم بمدة 180 يوماً من تاريخ الزراعة. ولا يجب التخلص من الاختبارات الحقلية أو المعملية للكشف عن النقاء الوراثى قبل إبلاغ البائع بوسائل الاتصال المناسبة بأية مخالفات أخرى وإعطائه وقتاً معقوالً لمعاينتها
+                    </div>
+                </div>
+                <div class="box d-flex position-relative">
+                    <div class="border-line"></div>
+                    <div class="bridge"></div>
+                    <div class="number flex-shrink-0">02</div>
+                    <div class="text me-3">
+                        يقوم المشترى بابلاغ البائع بالشكاوى الخاصة بالجودة بخلاف النقاوة الوراثية وذلك خلال 3 أيام عمل من معرفته بإختلاف وفيما لا يتجاوز 45 يوماً من تاريخ التسليم، أما بالنسبة للمشترين الذين يستخدمون التقاوى للزراعة بشكل خاص فيسمح لهم بمدة 21 يوماً من تاريخ الزراعة.
+                </div>
+                </div>
+                <div class="box d-flex position-relative">
+                    <div class="border-line"></div>
+                    <div class="bridge"></div>
+                    <div class="number flex-shrink-0">03</div>
+                    <div class="text me-3">
+                        تمنح الشكاوى الخاصة بمطابقة الصنف للوطات التقاوى المعتمدة للمشترى حق الحصول – بموجب طلب – على نسخة من التحليل الرسمى الذى يؤكد مطابقة الصنف، ويقوم البائع بتقديم تلك الشهادة.
+                    </div>
+                </div>
+                <div class="box d-flex position-relative">
+                    <div class="border-line"></div>
+                    <div class="bridge"></div>
+                    <div class="number flex-shrink-0">04</div>
+                    <div class="text me-3">
+                        فى حالة عدم اتفاق المشترى مع البائع على جودة التقاوى المسلمة يجوز للمشترى – بحسب الاجراء الملائم له أن : - أ. يطلب من الإدارة المركزية لفحص وإعتماد التقاوى أو أية جهة أخرى مؤهلة لسحب عينة يتم تقسيمها إلى أجزاء وتسليم جزء للمشترى والبائع ولإدارة المركزية الاعتماد التقاوى أو أى معمل آخر مؤهل إلجراء التحليل، و/ أو . ب. يطلب من الإدارة المركزية لفحص وإعتماد التقاوى أو أية جهة أخرى مؤهلة إجراء زيارة حقلية للتحقق من جودة التقاوى على الطبيعة
+                    </div>
+                </div>
+                <div class="box d-flex position-relative">
+                    <div class="border-line"></div>
+                    <div class="bridge"></div>
+                    <div class="number flex-shrink-0">05</div>
+                    <div class="text me-3">
+                        
+                        يقوم المعمل الذى أرسلت إليه العينة بتقديم تقريره دون تأخير لكل من المشترى والبائع . يتحمل الشاكى تكاليف سحب العينة وإجراء التحليل، وترد إليه التكاليف إذا صدر القرار لصالحه.
+                    </div>
+                </div>
+            </div>
+
+            <div class="right-list col-md-6 mt-5">
+                <h2 class="pb-3 fw-bolder">القاعدة السادسة : معاملة مخالفات الجوده :</h2>
+                <div class="box d-flex position-relative">
+                    <div class="border-line"></div>
+                    <div class="bridge"></div>
+                    <div class="number flex-shrink-0 flex-grow-0">01</div>
+                    <div class="text me-3">إذا انخفضت الجودة عن مستويات الاعتماد الرسمية والمنصوص عليها فى العقد فمن حق المشترى رفض استلام التقاوى .
+                    </div>
+                </div>
+                <div class="box d-flex position-relative">
+                    <div class="border-line"></div>
+                    <div class="bridge"></div>
+                    <div class="number flex-shrink-0">02</div>
+                    <div class="text me-3">
+                        يحق للبائع استبدال التقاوى المخالفة للعقد، وذلك خلال فترة الشحن أو الفترة التى تسمح للمزارع بإعادة زراعتها، ويتحمل البائع كافة المصروفات.
+                </div>
+                </div>
+                <div class="box d-flex position-relative">
+                    <div class="border-line"></div>
+                    <div class="bridge"></div>
+                    <div class="number flex-shrink-0">03</div>
+                    <div class="text me-3">
+                        يجوزالاتفاق على قيام المشترى بإعادة تجهيز التقاوى على حساب البائع توفيراً لمصروفات استبدالها.
+                </div>
+                </div>
+                <div class="box d-flex position-relative">
+                    <div class="border-line"></div>
+                    <div class="bridge"></div>
+                    <div class="number flex-shrink-0">04</div>
+                    <div class="text me-3">
+                        إذا إدعى البائع الاخير أن الخلاف المدعى به قد إرتكبته جهة أخرى غيره، فإنه يجوز توسيع الإدعاء لتشمل هذه الجهة
+                </div>
+                </div>
+                <div class="box d-flex position-relative">
+                    <div class="border-line"></div>
+                    <div class="bridge"></div>
+                    <div class="number flex-shrink-0">05</div>
+                    <div class="text me-3">
+                        
+                        فى حالة تعثر الوصول إلى تسوية ودية يحق لكل من البائع اللجوء إلى التحكيم
+                    </div>
+                </div>
+            </div>
+            <div class="right-list col-md-6 mt-5">
+                <h2 class="pb-3 fw-bolder">القاعدة السابعة : عقود الزراعة لانتاج وإكثار التقاوى:</h2>
+                <div class="box d-flex position-relative">
+                    <div class="border-line"></div>
+                    <div class="bridge"></div>
+                    <div class="number flex-shrink-0">01</div>
+                    <div class="text me-3">
+                        بالنسبة لعقود الاكثار فمن الجائز تطبيق قواعد الجمعية فى الإتجار فى التقاوى على عقود الاكثار ، ويتم تضمين العقد الشروط الملائمة والخاصة التى يتفق عليها الطرفان
+                </div>
+                </div>
+                <div class="box d-flex position-relative">
+                    <div class="border-line"></div>
+                    <div class="bridge"></div>
+                    <div class="number flex-shrink-0">02</div>
+                    <div class="text me-3">
+                        عند توقيع عقد الاكثار للزراعة لإنتاج التقاوى يقوم بائع محصول التقاوى بإعلام المشترى كتابة بكافة المعلومات الضرورية مثل تاريخ الزراعة وحالة الحقول والتفتيش عليها وتوقعات المحصول واإلنتاجية والجودة .
+                </div>
+                </div>
+                <div class="box d-flex position-relative">
+                    <div class="border-line"></div>
+                    <div class="bridge"></div>
+                    <div class="number flex-shrink-0">03</div>
+                    <div class="text me-3">يقوم بائع محصول التقاوى فوراً بإخطار المشترى بأى فشل أو عيب يؤثر على الكمية و/ أو الجودة بأى من الحقول و/ أو محصول التقاوى الناتج .
+                        </div>
+                </div>
+                <div class="box d-flex position-relative">
+                    <div class="border-line"></div>
+                    <div class="bridge"></div>
+                    <div class="number flex-shrink-0">04</div>
+                    <div class="text me-3">
+                        إذا كانت الجودة دون المواصفات الواردة فى العقد يحتفظ المشترى بحقه فى رفض التقاوى أو فى قبولها بسعر أقل ، وإذا تعذر وصول الطرفين ( البائع والمشترى ) إلى تسوية ودية يجوز لأي منهما اللجوء للتحكيم ( القاعدة الرابعة عشر من هذا الجزء ) للوصول إلى حل عادل.
+                    </div>
+                </div>
+            </div>
+
+            <h2 class="pb-3 fw-bolder text-center">القاعدة الثامنة : شروط الشحن وفتراته :</h2>
+            <div class="right-list col-md-6 mt-5">
+                <div class="box d-flex position-relative">
+                    <div class="border-line"></div>
+                    <div class="bridge"></div>
+                    <div class="number flex-shrink-0 flex-grow-0">01</div>
+                    <div class="text me-3">
+                        يضع البائع البضاعة تحت تصرف المشترى فى المكان المتفق عليه وفى الموعد المحدد أو خالل الفترة المحددة ويقبل المشترى بإنتقال صك الملكية والمسئولية إليه .</div>
+                </div>
+                <div class="box d-flex position-relative">
+                    <div class="border-line"></div>
+                    <div class="bridge"></div>
+                    <div class="number flex-shrink-0">02</div>
+                    <div class="text me-3">
+                        
+                    فى حالة االاتفاق على التسليم بموقع المشترى يتحمل البائع التكاليف ومخاطر النقل إلى الموقع. وينتقل صك الملكية والمسئولية الى المشترى بمجرد نقل البضاعة إلى الموقع .</div>
+                </div>
+                <div class="box d-flex position-relative">
+                    <div class="border-line"></div>
+                    <div class="bridge"></div>
+                    <div class="number flex-shrink-0">03</div>
+                    <div class="text me-3">
+                        
+                ما لم يتفق الطرفان على خلاف ذلك يعمل بفترات الشحن التالية : أ . " الشحن الفورى " : ويقصد به الشحن خلال 24 ساعة . ب . " الشحن المستعجل " : ويقصد به الشحن خلال 3 أيام . ج . " الشحن السريع " : ويقصد به الشحن خلال 10 أيام . د . " الشحن قبل تاريخ محدد " : ويقصد به الشحن فى أى يوم قبل حلول ذلك التاريخ المحدد . هـ . " الشحن خلال فترة زمنية محددة ": (مثل شهرى أغسطس - سبتمبر ) : ويقصد به الشحن فى أى يوم فى هذه الفترة الزمنية. و . " الشحن حسب اختيار المشترى " : ويقصد به الشحن خلال فترة لا تقل عن 10 أيام يحددها المشترى.</div>
+                </div>
+            </div>
+            <div class="right-list col-md-6 mt-5">
+                <div class="box d-flex position-relative">
+                    <div class="border-line"></div>
+                    <div class="bridge"></div>
+                    <div class="number flex-shrink-0 flex-grow-0">04</div>
+                    <div class="text me-3">
+                        إذا لم يقدم المشترى تعليمات الشحن فى الوقت المناسب فإن البائع يمنح المشترى – باستخدام إحدى وسائل الإتصال – يومين عمل لتمكينه من إرسال التعليمات الملائمة .</div>
+                </div>
+                <div class="box d-flex position-relative">
+                    <div class="border-line"></div>
+                    <div class="bridge"></div>
+                    <div class="number flex-shrink-0">05</div>
+                    <div class="text me-3">
+                        
+                    إذا وصلت التعليمات خلال اليومين لن يحق للبائع الحصول على أية تعويضات، أما إذا لم تصل تلك التعليمات خلال فترة اليومين فإنه بحق للبائع إلغاء العقد والمطالبة بدفع تعويضات مباشرة أو غير مباشرة مثل الفائدة، تكاليف التخزين وفروق الأسعار ( فاقد الربحية ) ..... إلخ، ويخطر البائع المشترى بقراره فى ذلك عن طريق إحدى وسائل الإتصال</div>
+                </div>
+                <div class="box d-flex position-relative">
+                    <div class="border-line"></div>
+                    <div class="bridge"></div>
+                    <div class="number flex-shrink-0">06</div>
+                    <div class="text me-3">
+                        
+                    إذا قبل البائع بتعليمات الشحن بعد نهاية مدة العقد فمن الضرورى االتفاق على دفع التعويضات قبل الشحن .</div>       
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- end treasurer section implementaion-->
+    <!-- start footer implementation -->
+    <footer class="footer f-bg mt-4 row justify-content-center align-items-center">
+        <div class="boxes-container container row justify-content-center c-white1 p-4">
+            <div class="logo-box text-right col-md-4">
+                <img src="images/alternative-logo.png" alt="" class="mw-100">
+                <p class="lh-base mt-2 c-white2">تأسست الجمعية بهدف دعم القطاع الزراعي المصري وتعزيز الإنتاجية و تلتزم الجمعية في أنظمتها الأساسية وانشتطها وتمويلها باحترام أحكام ومبادئ الدستور والقوانين المصرية والاتفاقيات الدولية التي صدقت عليها مصر.</p>
+            </div>
+            <div class="contact-us-box text-right col-md-4">
+                <h3 class="fw-bolder mb-4">تواصل معنا</h3>
+                <div class="fw-bold fs-6 mb-3">الهاتف: <span class="c-white3">20235709529 +</span></div>
+                <div class="fw-bold fs-6 mb-3">الهاتف: <span class="c-white3">20235709528 +</span></div>
+                <div class="fw-bold fs-6 mb-3">فاكس: <span class="c-white3">0235697975 2 +</span></div>
+                <div class="fw-bold fs-6 mb-4">البريد الألكتروني: <span class="c-white3"> info@esia-eg.org</span></div>
+                <div class="fw-bold fs-6">العنوان: <span class="c-white3 lh-lg">أبراج المناسترلي - برج 5 الدور 14 شقة 4 شارع البحر الأعظم الجيزة</span></div>
+            </div>
+            <!-- impeded addres on map -->
+            <div class="google-map-box text-right col-md-4">
+                <iframe class="w-100 h-100" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3455.3586262005183!2d31.215931723916956!3d29.997857220775547!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1458470c3181c14d%3A0x9f392bcd30ba563d!2z2KfZhNis2YXYudmK2Kkg2KfZhNmF2LXYsdmK2Kkg2YTYtdmG2KfYudipINin2YTYqtmC2KfZiNmK!5e0!3m2!1sar!2seg!4v1730889036422!5m2!1sar!2seg" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </div>
+        <p class="copyright c-white1">
+            حقوق النشر محفوظة لدى <span class="c-white3" >الجمعيةالمصرية لصناعة التقاوي-(powerd by agri soft) </span>
+        </p>
+    </footer>
+    <!-- end footer implementation -->
+    <!-- end main implementation -->
+    <!-- import bootstrab entities for js -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" 
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" 
+    crossorigin="anonymous">
+    </script>
+    <!-- import swipperjs for js fiel -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <!-- link main js file -->
+    <script src="/js/mani.js"></script>
 </body>
+</html>
