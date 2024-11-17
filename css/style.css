@@ -658,3 +658,21 @@ footer .copyright  {
 }
 }
 /* end أجهزه الجمعية page */
+
+/* start الأخبار page */
+.esia-activities .card-activity:hover .news {
+    transition: scale .5s linear;
+    -webkit-transition: scale .5s linear;
+    -moz-transition: scale .5s linear;
+    -ms-transition: scale .5s linear;
+    -o-transition: scale .5s linear;
+}
+.esia-activities .card-activity:hover .news {
+    transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    -moz-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    -o-transform: scale(1.1);
+}
+    
+/* end الأخبار page */
