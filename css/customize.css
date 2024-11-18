@@ -175,6 +175,15 @@
 .r-0 {
     right: 0;
 }
+.t-77 {
+    top: 77px !important;
+}
+.t-1857 {
+    top: 1857px !important;
+}
+.t-31{
+    top: 31% !important;
+}
 .r-unset {
     right: unset;
 }
@@ -221,9 +230,6 @@
     justify-content: center;
     align-items: center;
     font-size: 25px;
-}
-.collapse .navbar-nav .highlight {
-    color: red !important;
 }
 /* end components */
 /* start spaces */
