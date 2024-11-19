@@ -121,8 +121,14 @@
 .h-250 {
     height: 250px;
 }
+.h-270 {
+    height: 270px;
+}
 .h-300 {
     height: 300px;
+}
+.h-330 {
+    height: 330px;
 }
 .h-350 {
     height: 350px;
@@ -197,6 +203,12 @@
 .t-97 {
     top:97px;
 }
+.t-footer {
+    top: 15.5rem;
+}
+.l-25 {
+    left: 25%;
+}
 /* end top timeline */
 /* end spaces */
 /* end fonts */
@@ -230,6 +242,12 @@
     justify-content: center;
     align-items: center;
     font-size: 25px;
+}
+.opacity-6 {
+    opacity: 0.6;
+}
+.bg-grayy {
+    background-color: gray;
 }
 /* end components */
 /* start spaces */

@@ -151,15 +151,12 @@ body {
     border-color: #156505 !important;
 }
 .esia-activities .card-activity {
-    width: 400px;
-    height: 400px;
     border: 5px solid #48682b;
     background-color: #48682b;
 }
 .esia-activities .card-activity img {
-    width: 100%;
-    height: 75%;
     object-fit: cover;
+    height: 379px;
 }
 .esia-activities button {
     background-color: white;
@@ -777,12 +774,12 @@ footer .copyright  {
 /* end أجهزه الجمعية page */
 
 /* start الأخبار page */
-.esia-activities .card-activity:hover .news {
-    transition: scale .5s linear !important;
-    -webkit-transition: scale .5s linear !important;
-    -moz-transition: scale .5s linear !important;
-    -ms-transition: scale .5s linear !important;
-    -o-transition: scale .5s linear !important;
+.esia-activities .card-activity .news {
+    transition: all 0.3s ease !important;
+    -webkit-transition: all 0.3s ease !important;
+    -moz-transition: all 0.3s ease !important;
+    -ms-transition: all 0.3s ease !important;
+    -o-transition: all 0.3s ease !important;
 }
 .esia-activities .card-activity:hover .news {
     transform: scale(1.1) !important;
@@ -793,3 +790,35 @@ footer .copyright  {
 }
     
 /* end الأخبار page */
+
+/* start أنشطة الجمعية page */
+.skew .image img {
+    width: 100%;
+    height: 340px;
+    object-fit: cover;
+}
+.skew .number {
+    position: relative;
+    right: 38%;
+    margin-bottom: 10px;
+    width: 55px;
+    height: 55px;
+    background: #143414;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+    color: #2fe62f;
+}
+.skew .info {
+    left: 0 !important;
+    width: 100%;
+}
+.skew .ske {
+    padding: 10px;
+}
+.skew h6 {
+    margin-bottom: 35px;
+}
+/* end أنشطة الجمعية page */
