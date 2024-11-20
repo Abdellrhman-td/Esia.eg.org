@@ -644,6 +644,7 @@ footer .copyright  {
 @media (max-width: 768px) {
     .timeline .box-style {
         width: 100% !important;
+        text-align: center;
     }
     .timeline .line-info {
         display: none !important;
