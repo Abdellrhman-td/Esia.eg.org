@@ -142,6 +142,9 @@
 .h-450 {
     height: 450px;
 }
+.h-480 {
+    height: 480px;
+}
 .h-500 {
     height: 500px;
 }
@@ -178,8 +181,14 @@
 .t-30 {
     top: 30px;
 }
+.t-481 {
+    top: 481px;
+}
 .r-0 {
     right: 0;
+}
+.r-112 {
+    right: 112px;
 }
 .t-77 {
     top: 77px !important;
@@ -195,6 +204,12 @@
 }
 .l-0 {
     left: 0;
+}
+.mt-14 {
+    margin-top: 14.5rem !important;
+}
+.mb-6 {
+    margin-bottom: 6rem !important;
 }
 /* start top timeline */
 .t-927 {
@@ -255,4 +270,6 @@
     padding: 100px 0 100px 0;
 }
 /* end spaces */
+
+
 

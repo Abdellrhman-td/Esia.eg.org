@@ -184,9 +184,6 @@ body {
     }
 }
 /* start image slider */
-.image-slider {
-    background-color: #25861e;
-}
 .slider-container {
     margin: 10px auto;
     width: 62%;
@@ -376,7 +373,11 @@ footer .copyright  {
 
 /* start مجلس الإدراه*/
 .members .boxes-members .box .info {
-    transition: bottom 0.4s ease 0.4s;
+    transition: all .3s linear;
+    -webkit-transition: all .3s linear;
+    -moz-transition: all .3s linear;
+    -ms-transition: all .3s linear;
+    -o-transition: all .3s linear;
 }
 .members .boxes-members .box:hover .info{
     position: relative;
@@ -822,3 +823,46 @@ footer .copyright  {
     margin-bottom: 35px;
 }
 /* end أنشطة الجمعية page */
+
+/* start اتصل بنا page */
+.info-contact .info-box .contact-box{
+    box-shadow: 0 0 10px 0 rgb(0 0 0 / .5);
+    transition: all .1s linear;
+    -webkit-transition: all .1s linear;
+    -moz-transition: all .1s linear;
+    -ms-transition: all .1s linear;
+    -o-transition: all .1s linear;
+}
+.info-contact .info-box .contact-box:hover{
+    box-shadow: 0 20px 80px 0 rgb(193 199 212 / .25);
+}
+.form-map-container form input,
+.form-map-container form textarea {
+    outline: none;
+    border: 1px solid #e6f0ee;
+    transition: all .2s linear;
+    -webkit-transition: all .2s linear;
+    -moz-transition: all .2s linear;
+    -ms-transition: all .2s linear;
+    -o-transition: all .2s linear;
+    padding: 5px 8px;
+    caret-color: rgb(98, 98, 98);
+    font-size: 20px;
+    margin-top: 5px;
+}
+.form-map-container form input:focus,
+.form-map-container form textarea:focus {
+    border-color: #156505;
+}
+.form-map-container textarea {
+    width: 100%;
+    height: 200px;
+}
+/* end اتصل بنا page */
+
+/* start خدمتنا page */
+.box-container-grow .card-activity {
+    height: 447px;
+    max-height: 447px;
+}
+/* end خدمتنا page */
