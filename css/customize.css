@@ -74,7 +74,7 @@
     width: 250px;
 }
 .w-300 {
-    width: 300px;
+    width: 300px !important;
 }
 .w-380 {
     width: 380px;
@@ -172,6 +172,10 @@
 .h-1680{
     height: 1680px;
 }
+.h-67 {
+    height: 67%;
+}
+
 /* end width height */
 /* start fonts */
 .ff-cairo {
@@ -229,6 +233,15 @@
 }
 .t-footer {
     top: 15.5rem;
+}
+.t-75 {
+    top: 75px !important;
+}
+.t-31 {
+    top: 31% !important;
+}
+.t-1837 {
+    top: 1837px !important;
 }
 .l-25 {
     left: 25%;
