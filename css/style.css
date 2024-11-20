@@ -631,7 +631,24 @@ footer .copyright  {
     border-radius: 56%;
     border: 2px solid gray;
 }
-
+@media (max-width: 1200px) {
+    .timeline .box-style {
+        width: 370px !important;
+    }
+}
+@media (max-width: 992px) {
+    .timeline .box-style {
+        width: 300px !important;
+    }
+}
+@media (max-width: 768px) {
+    .timeline .box-style {
+        width: 100% !important;
+    }
+    .timeline .line-info {
+        display: none !important;
+    }
+}
 /* end مجلس الإدراه*/
 
 /* start الأختصاصات page */
