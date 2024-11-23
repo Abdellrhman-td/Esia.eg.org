@@ -96,6 +96,11 @@ body {
     font-size: 16px;
     font-weight: 700;
 }
+@media (max-width: 992px) {
+    .navbar .collapse .d-flex {
+        margin-bottom: 15px !important;
+    }
+}
 /* end main menu */
 
 /* start welcome message section */
@@ -744,14 +749,22 @@ footer .copyright  {
 }
 .conditions .img-box img:nth-child(2):hover {
     animation: top-bottom 2s infinite;
-    left: 23.5%;
+    -webkit-animation: top-bottom 2s infinite;
 }
 @keyframes top-bottom {
     0%,100% {
-        transform: translateY(-8px);
+        transform: translate(-50%, -8px);
+        -webkit-transform: translate(-50%, -8px);
+        -moz-transform: translate(-50%, -8px);
+        -ms-transform: translate(-50%, -8px);
+        -o-transform: translate(-50%, -8px);
 }
     50% {
-        transform: translateY(-4px);
+        transform: translate(-50%, -4px);
+        -webkit-transform: translate(-50%, -4px);
+        -moz-transform: translate(-50%, -4px);
+        -ms-transform: translate(-50%, -4px);
+        -o-transform: translate(-50%, -4px);
 }
 }
 .membership .boxs-container .box{
@@ -787,15 +800,23 @@ footer .copyright  {
     box-shadow: 0px 15px 50px 0px #D3DCE8;
 }
 .invitation .img-box img:nth-child(2):hover {
-    animation: top-bottom 2s infinite;
-    left: 23.5%;
+    animation: top-bottom2 2s infinite;
+    -webkit-animation: top-bottom2 2s infinite;
 }
-@keyframes top-bottom {
+@keyframes top-bottom2 {
     0%,100% {
-        transform: translateY(-8px);
+        transform: translate(-50%, -8px);
+        -webkit-transform: translate(-50%, -8px);
+        -moz-transform: translate(-50%, -8px);
+        -ms-transform: translate(-50%, -8px);
+        -o-transform: translate(-50%, -8px);
 }
     50% {
-        transform: translateY(-4px);
+        transform: translate(-50%, -4px);
+        -webkit-transform: translate(-50%, -4px);
+        -moz-transform: translate(-50%, -4px);
+        -ms-transform: translate(-50%, -4px);
+        -o-transform: translate(-50%, -4px);
 }
 }
 /* end أجهزه الجمعية page */
