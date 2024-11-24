@@ -913,3 +913,59 @@ footer .copyright  {
     max-height: 447px;
 }
 /* end خدمتنا page */
+
+/* start slider images */
+.slider-images .swiper-slide .image-box .slider-text  {
+    background-color: #e8e8e8 !important;
+    padding: 12px 10px 30px !important;
+    margin-top: 5px;
+}
+.slider-images .swiper-slide .image-box {
+    height: 315px;
+    overflow: hidden;
+    border-radius: 16px;
+    -webkit-border-radius: 16px;
+    -moz-border-radius: 16px;
+    -ms-border-radius: 16px;
+    -o-border-radius: 16px;
+    cursor: pointer;
+}
+.slider-images .swiper-slide .image-box img {
+    height: 210px;
+}
+.slider-images .swiper-pagination {
+    margin-top: 15px !important;
+    position: relative !important;
+    color: #0CED1D !important;
+}
+/* end slider images */
+
+/* start أعضاء الجمعية page */
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+    z-index: 1;
+    position: absolute !important;
+    width: 5% !important; /* Adjust the width of the clickable area */
+}
+/* .carousel-control-prev{
+    right: 900px !important;
+    background-color: gray !important;
+    position: absolute !important;
+}
+.carousel-control-next {
+    background-color: gray !important;
+    position: absolute !important;
+} */
+.carousel-control-prev:hover .carousel-control-prev-icon,
+.carousel-control-next:hover .carousel-control-next-icon {
+
+}
+.carousel-inner {
+    max-height: 150px !important;
+}
+/* end أعضاء الجمعية page */

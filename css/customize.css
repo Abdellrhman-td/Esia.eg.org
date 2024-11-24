@@ -106,6 +106,9 @@
 .h-40 {
     height: 40px;
 }
+.h-206 {
+    height: 206px !important;
+}
 .h-60 {
     height: 60px;
 }
@@ -196,6 +199,9 @@
 }
 .t-481 {
     top: 481px;
+}
+.mt-9 {
+    margin-top: 9px !important;
 }
 .r-0 {
     right: 0;
